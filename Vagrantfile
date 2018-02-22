@@ -2,11 +2,11 @@
 # vi: set ft=ruby :
 # encoding: UTF-8
 
-Vagrant.configure("2") do |config|
+Vagrant.configure("2”) do |config|
 
 config.vm.provision "shell", path: "backup_script.sh"
 
-	config.vm.define "box1" do |box1|
+	config.vm.define "box1" do |boxl|
         box1.vm.box="ubuntu/trusty64"
 
 	#box1.vm.provision "shell", inline: <<-SHELL
